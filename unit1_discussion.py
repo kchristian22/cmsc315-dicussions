@@ -145,7 +145,7 @@ def main():
     # one object from the child class
     my_cam = SecurityCamera("Driveway Cam", ["Night Vision"], "4K", "Wyze")
 
-    # inheritance by calling methods
+    # interhitance by calling methods
     my_cam.display_info()
 
     # Call demonstration functions
