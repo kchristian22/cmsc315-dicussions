@@ -1,27 +1,29 @@
-# Unit 1 Discussion: Python OOP, Namespaces, and Copying
+# Unit 2 Discussion: Stacks and Queues
 
 ## Overview
 
-This assignment explores object-oriented programming (OOP) concepts in Python, including inheritance, namespaces, and object copying.
+This assignment explores two fundamental linear data structures:
+
+* Stack (LIFO)
+* Queue (FIFO)
 
 ## Learning Objectives
 
-- Create parent and child classes
-- Use inheritance to extend functionality
-- Understand class and instance namespaces
-- Demonstrate shallow and deep copying
-- Apply object-oriented design principles
+* Implement stack operations
+* Implement queue operations
+* Understand LIFO and FIFO behavior
+* Create edge cases
 
 ## Requirements
 
-Complete all TODO sections in the source code:
+Complete all TODO sections:
 
-1. Create a parent class.
-2. Create a child class using inheritance.
-3. Demonstrate class and instance namespaces.
-4. Demonstrate shallow and deep copying.
-5. Create and test objects in `main()`.
-6. Add a student-created extension.
+1. Implement stack operations.
+2. Implement queue operations.
+3. Demonstrate LIFO behavior.
+4. Demonstrate FIFO behavior.
+5. Create and test edge cases.
+6. Create a real-world scenario.
 
 ## Discussion Board Reflection
 
@@ -31,11 +33,15 @@ Your reflection should be approximately 150–200 words and address the followin
 
 1. What concepts or skills did you learn while completing this assignment?
 2. What challenges did you encounter, and how did you overcome them?
-3. Compare OOP to procedural programming.
-4. Discuss the benefits of maintainability and reusability and apply this managing overhead, practical application development, and future use.
+3. Explain the differences between stacks and queues as this relates to real-world applications.
 
-REFLECTION:
-While working on this discussion code, I learned how to basically implement inheritance in Python by creating a parent class and extending its functionality through a child class as well. Along the way, I also gained a much deeper understanding of how namespaces work, specifically in a sense that, the difference between shared class variables and unique instance variables. I mainly showed this by using the __dict__ attribute to view an object's namespace.
-However, my biggest challenge was initially getting my virtual lab environment to recognize the Python SDK so I could run the code and going back to fix a few mistakes made when inputting the objects. Although, I overcame both problems by troubleshooting the project module settings until the interpreter was properly bound and rechecking the code through each run.
-Comparing OOP to procedural programming, I found that procedural programming focuses more on writing sequential functions to process data, whereas OOP organizes a code into reusable objects that bundle data and behavior together. Both are super helpful in their own way that benefits people when it comes to coding. In terms of benefits, the advantages of this OOP approach became abundantly clear that it vastly improves maintainability and reusability. By using inheritance, users can reduce the overhead of rewriting any duplicate codes, making application development faster. 
-As for future use, these modular design principles will definitely be essential for managing complications and building scalable systems.
+
+
+Reflection:
+
+I learned through this unit's discussion on how to practically work with linear data structures in Python and ultimately gained a pretty deeper understanding of how restricting certain data can be accessed, whether it's from one end or two ends, it still enforces specific behavior like LIFO and FIFO. A major challenge I encountered was handling the edge cases, specifically preventing the program from crashing when attempting to remove an item from an empty structure. However, I luckily overcame this by adding is\_empty() checks inside the pop(), dequeue(), peek(), and front() methods so they return a more smoother error message instead of throwing an exception.
+
+
+
+Comparing stacks and queues in real-world applications shows the difference of why choosing the right structure matters. Stacks, to me, are perfect for reversing actions or tracking history like browser back buttons, while queues are essential for managing shared resources mostly in chronological order, quite similar to print queues or task scheduling.
+
